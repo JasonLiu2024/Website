@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>YOUR NAME — Personal Site</title>
+  <meta name="description" content="Personal website of YOUR NAME: research, publications, and contact." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Open Graph / Twitter (optional but nice for sharing) -->
+  <meta property="og:title" content="YOUR NAME — Personal Site" />
+  <meta property="og:description" content="Research, publications, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io/" />
+  <meta property="og:image" content="https://YOUR_GITHUB_USERNAME.github.io/assets/profile.jpg" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="brand" href="#">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">XIAOYI LIU</span> <!-- Top left name -->
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#research">Research</a>
+        <a class="nav__link" href="#publications">Publications</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="about" aria-labelledby="about-title">
+      <div class="container grid">
+        <div>
+          <h1 id="about-title" class="title">Xiaoyi Liu</h1>
+          <p class="subtitle">Student @ Brown University • Research areas: AI, Computational Design</p>
+          <p>
+            <!-- I lead <strong>XYZ</strong>, where we study <em>brief focus</em>. -->
+            <!-- My work appears in <abbr title="Conference on Neural Information Processing Systems">NeurIPS</abbr>,
+            <abbr title="International Conference on Machine Learning">ICML</abbr>, and <abbr title="International Conference on Learning Representations">ICLR</abbr>. -->
+          </p>
+          <p class="links">
+            <a class="button" href="#research">See research</a>
+            <a class="button button--ghost" href="#contact">Get in touch</a>
+          </p>
+          <ul class="social" aria-label="Social links">
+            <li><a href="https://scholar.google.com/..." aria-label="Google Scholar" class="icon-link">
+              <!-- Scholar icon (simple book) -->
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 5a2 2 0 0 1 2-2h9a4 4 0 0 1 4 4v10.5a.5.5 0 0 1-.8.4L14 16.5l-3.2 1.9a.5.5 0 0 1-.6 0L7 16.5l-3.2 1.9a.5.5 0 0 1-.8-.4V5zM7 6h8a2 2 0 0 1 2 2v6l-2-1.2-3 1.8-3-1.8-2 1.2V6z"/></svg>
+              <span>Scholar</span></a></li>
+            <li><a href="https://github.com/YOUR_GITHUB_USERNAME" aria-label="GitHub" class="icon-link">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 .5A12 12 0 0 0 0 12.7c0 5.4 3.4 10 8.2 11.6.6.1.8-.3.8-.6v-2c-3.3.8-4-1.4-4-1.4-.6-1.6-1.5-2-1.5-2-1.2-.8.1-.8.1-.8 1.3.1 2 .1 2.9 1.5 1.2 2 3.2 1.4 4 .9.1-.9.5-1.4.9-1.7-2.7-.3-5.6-1.4-5.6-6.2 0-1.4.5-2.6 1.3-3.5-.1-.3-.6-1.7.1-3.6 0 0 1-.3 3.6 1.3a12.4 12.4 0 0 1 6.6 0C19 3.7 20 4 20 4c.7 1.9.2 3.3.1 3.6.8.9 1.3 2.1 1.3 3.5 0 4.8-2.9 5.9-5.6 6.2.6.5 1 1.4 1 2.9v4.3c0 .3.2.7.8.6A12 12 0 0 0 24 12.7 12 12 0 0 0 12 .5z"/></svg>
+              <span>GitHub</span></a></li>
+            <!-- <li><a href="mailto:you@university.edu" class="icon-link">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M2 5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v.5l-10 6-10-6V5zm0 3.3V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.3l-9.4 5.6a2 2 0 0 1-2.2 0L2 8.3z"/></svg>
+              <span>Email</span></a></li> -->
+          </ul>
+        </div>
+
+        <figure class="hero__figure">
+          <img src="assets/profile.jpg" alt="Portrait of YOUR NAME" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <!-- <section id="research" class="section" aria-labelledby="research-title">
+      <div class="container">
+        <h2 id="research-title">Research</h2>
+        <p>I explore <em>concise description of your research program</em>. Current threads:</p>
+        <ul class="cards">
+          <li class="card">
+            <h3>Thread A</h3>
+            <p>One-liner of what you do here and why it matters.</p>
+          </li>
+          <li class="card">
+            <h3>Thread B</h3>
+            <p>Brief sentence that points to impact/venues.</p>
+          </li>
+          <li class="card">
+            <h3>Thread C</h3>
+            <p>Another concise area; keep it scannable.</p>
+          </li>
+        </ul>
+      </div>
+    </section> -->
+
+    <!-- Publications -->
+    <section id="publications" class="section" aria-labelledby="pubs-title">
+      <div class="container">
+        <h2 id="pubs-title">Selected Publications</h2>
+        <ol class="pubs">
+          <!-- Replace with real citations; keep consistent style -->
+          <!-- <li>
+            <span class="pubs__title">Paper Title</span>
+            <span class="pubs__authors">First Author, Second Author, <strong>YOU</strong></span>
+            <span class="pubs__venue">Venue, Year</span>
+            <a class="pubs__link" href="#" aria-label="Read paper">pdf</a>
+            <a class="pubs__link" href="#" aria-label="Project page">project</a>
+            <a class="pubs__link" href="#" aria-label="Code">code</a>
+          </li>
+          <li>
+            <span class="pubs__title">Another Paper</span>
+            <span class="pubs__authors">Authors…</span>
+            <span class="pubs__venue">Venue, Year</span>
+            <a class="pubs__link" href="#">pdf</a>
+          </li> -->
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <!-- <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contact</h2>
+        <p>Best way to reach me: <a href="mailto:you@university.edu">you@university.edu</a></p>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Xiaoyi Liu. Built with pure HTML/CSS/JS, hosted on GitHub Pages.</small>
+    </div>
+  </footer>
+</body>
+</html>
